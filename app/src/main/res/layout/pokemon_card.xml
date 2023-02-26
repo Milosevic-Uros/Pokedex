@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="8dp"
+    android:layout_centerVertical="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_bg"
+    android:orientation="vertical"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:minHeight="70dp">
+
+        <TextView
+            android:id="@+id/pokeTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:layout_weight="1"
+            android:text="Pokemon name:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/pokeImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:clickable="true"
+            android:contentDescription="icon"
+            android:gravity="right"
+            android:src="@drawable/poke_ball" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

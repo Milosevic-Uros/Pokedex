@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTintMode="add">
+
+
+    <ImageView
+        android:id="@+id/pokemonLogo"
+        android:layout_width="407dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokemonlogo"
+        android:visibility="invisible"/>
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="407dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokemonlogo"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"/>
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="407dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pokemonlogo"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonLogo"
+ />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/pokeSearch"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:queryHint="Search by pokemon name"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonLogo" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
